@@ -4,176 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabela</title>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
+        body{font-family: Arial, Helvetica, sans-serif;
+
         }
         table {
-            width: 500px;
             border-collapse: collapse;
-            position: relative;
+            width: 300px;
         }
-        
-        td, th {
-            border: 1px solid black; 
+        td {
+            border: 1px solid black;
             padding: 10px;
             text-align: center;
         }
-        caption {
-            font-size: 1.5em;
-            background-color: rgb(171, 171, 181);
-            font-weight: bold;
-            padding: 10px;
-        }
-        
-        thead, tfoot {
-            background-color: gray;
-            color: white;
-        }
-        thead >tr>th {
-            position: sticky;
-            top: -1px;
-            background-color: gray;
-        }
-        tbody >tr:nth-child(2n){
-            background-color: lightslategray;
-        }
-        td.numero {
-            text-align: right;
-        }
-                       
+
     </style>
 </head>
 <body>
-    <h1>Uso de tabelas grandes</h1>
+    <h1>Mesclagem de celulas</h1>
     <table>
-        <caption>População das unidades federativas</caption>
-        <thead>
-            <tr>
-                <th scope="col">Estado</th>
-                <th scope="col" style="width: 50px;">População</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>São Paulo</td>
-                <td class="numero">41 262 199</td>
-            </tr>
-            <tr>
-                <td>Rio Grande do Sul</td>
-                <td class="numero">10 693 929</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Goiais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-            <tr>
-                <td>Minas gerais</td>
-                <td class="numero">3 514 952</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th scope="row">Total de Habitantes</th>
-                <td><strong>0000009</strong></td>
-            </tr>
-
-        </tfoot>
-  
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>    
+        </tr>
+        <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+        <tr>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td colspan="2">L</td>
+        </tr>
     </table>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias similique accusantium, necessitatibus natus praesentium ipsa fugiat a numquam repellendus veritatis quisquam reprehenderit est consequuntur maiores voluptate ipsam. Libero, odit illo?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sunt eligendi rerum, exercitationem perferendis adipisci saepe nobis omnis quas laudantium, architecto repudiandae sequi doloribus pariatur aspernatur quo, harum id facilis!Loremlofa-rotate-180lore</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias similique accusantium, necessitatibus natus praesentium ipsa fugiat a numquam repellendus veritatis quisquam reprehenderit est consequuntur maiores voluptate ipsam. Libero, odit illo?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sunt eligendi rerum, exercitationem perferendis adipisci saepe nobis omnis quas laudantium, architecto repudiandae sequi doloribus pariatur aspernatur quo, harum id facilis!Loremlofa-rotate-180lore</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias similique accusantium, necessitatibus natus praesentium ipsa fugiat a numquam repellendus veritatis quisquam reprehenderit est consequuntur maiores voluptate ipsam. Libero, odit illo?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sunt eligendi rerum, exercitationem perferendis adipisci saepe nobis omnis quas laudantium, architecto repudiandae sequi doloribus pariatur aspernatur quo, harum id facilis!Loremlofa-rotate-180lore</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias similique accusantium, necessitatibus natus praesentium ipsa fugiat a numquam repellendus veritatis quisquam reprehenderit est consequuntur maiores voluptate ipsam. Libero, odit illo?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sunt eligendi rerum, exercitationem perferendis adipisci saepe nobis omnis quas laudantium, architecto repudiandae sequi doloribus pariatur aspernatur quo, harum id facilis!Loremlofa-rotate-180lore</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias similique accusantium, necessitatibus natus praesentium ipsa fugiat a numquam repellendus veritatis quisquam reprehenderit est consequuntur maiores voluptate ipsam. Libero, odit illo?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sunt eligendi rerum, exercitationem perferendis adipisci saepe nobis omnis quas laudantium, architecto repudiandae sequi doloribus pariatur aspernatur quo, harum id facilis!Loremlofa-rotate-180lore</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias similique accusantium, necessitatibus natus praesentium ipsa fugiat a numquam repellendus veritatis quisquam reprehenderit est consequuntur maiores voluptate ipsam. Libero, odit illo?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sunt eligendi rerum, exercitationem perferendis adipisci saepe nobis omnis quas laudantium, architecto repudiandae sequi doloribus pariatur aspernatur quo, harum id facilis!Loremlofa-rotate-180lore</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias similique accusantium, necessitatibus natus praesentium ipsa fugiat a numquam repellendus veritatis quisquam reprehenderit est consequuntur maiores voluptate ipsam. Libero, odit illo?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sunt eligendi rerum, exercitationem perferendis adipisci saepe nobis omnis quas laudantium, architecto repudiandae sequi doloribus pariatur aspernatur quo, harum id facilis!Loremlofa-rotate-180lore</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias similique accusantium, necessitatibus natus praesentium ipsa fugiat a numquam repellendus veritatis quisquam reprehenderit est consequuntur maiores voluptate ipsam. Libero, odit illo?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sunt eligendi rerum, exercitationem perferendis adipisci saepe nobis omnis quas laudantium, architecto repudiandae sequi doloribus pariatur aspernatur quo, harum id facilis!Loremlofa-rotate-180lore</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias similique accusantium, necessitatibus natus praesentium ipsa fugiat a numquam repellendus veritatis quisquam reprehenderit est consequuntur maiores voluptate ipsam. Libero, odit illo?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sunt eligendi rerum, exercitationem perferendis adipisci saepe nobis omnis quas laudantium, architecto repudiandae sequi doloribus pariatur aspernatur quo, harum id facilis!Loremlofa-rotate-180lore</p>
 </body>
 </html>
